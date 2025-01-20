@@ -1,0 +1,16 @@
+<div class="card mt-5">
+    <div class="card-header">Pridėti pirkinį</div>
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="purchaseName" class="form-label">Pirkiniai</label>
+            <input type="text" id="purchaseName" class="form-control" [(ngModel)]="item.name">
+        </div>
+        <div class="mb-3">
+            <label for="purchaseQuantity" class="form-label">Kiekis</label>
+            <input type="number" id="purchaseQuantity" class="form-control" [(ngModel)]="item.quantity">
+        </div>
+        <button class="btn btn-success" (click)="addPurchase()">Pridėti pirkinį</button>
+        
+
+    </div>
+</div>
